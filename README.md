@@ -296,7 +296,7 @@ Now that we have the data saved to the news variable lets use [mat-list][mat-lis
 </mat-list>
 ```
 
-##And volah we are done! 
+## And volah we are done! 
 
 Future improvements for the application could be:
 - adding a paginator / lazy loading for the news (since the app only downloads the first 20 news at the moment)
