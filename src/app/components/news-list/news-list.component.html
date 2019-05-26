@@ -1,0 +1,8 @@
+<mat-list>
+  <mat-list-item  *ngFor="let item of news; let i = index">
+    {{i+1}}. 
+    <a target='_blank' href="{{item.url}}" style="padding: 0 5px;">{{item.title}}</a>
+     by <b style="padding: 0 5px;"> {{item.by}} </b>
+     on <i style="padding: 0 5px;"> {{toDate(item.time)}} </i>
+  </mat-list-item>
+</mat-list>
