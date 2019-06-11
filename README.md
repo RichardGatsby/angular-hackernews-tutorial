@@ -220,8 +220,8 @@ cd components
 Use the angular client to generate the base template for the two components we will be needing
 
 ```
-ng generate components header
-ng generate components news-list
+ng generate component header
+ng generate component news-list
 ```
 
 Lets start of with the header. Most of the applications you see on the web usually has a header. The header usually contains atleast branding and navigation.
@@ -295,6 +295,17 @@ Now that we have the data saved to the news variable lets use [mat-list][mat-lis
   </mat-list-item>
 </mat-list>
 ```
+
+- If you try to run the application now you will notice that toDate function is missing. To fix this lets add a 
+toDate function to news-list.component.ts
+
+```
+public toDate(ms){
+  const dateTime = new Date(ms*1000);
+  return dateTime.toLocaleDateString();
+}
+```
+
 
 ## And volah we are done! 
 
